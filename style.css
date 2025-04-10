@@ -1,0 +1,55 @@
+html, body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    font-size: 1.1em;
+}
+
+.content {
+    margin-top: 20px;
+    width: 400px;
+}
+
+.location {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.weather {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.left {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+img {
+    margin-top: 10px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 10px 0;
+}
+
+.temp {
+    flex: 1;
+    font-size: 2.3em;
+}
