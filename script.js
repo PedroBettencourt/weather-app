@@ -4,6 +4,7 @@ searchBtn.addEventListener("click", async function() {
     const place = search.value;
     const weather = await getWeather(place);
     displayWeather(weather);
+    search.value = "";
 })
 
 async function getWeather(place) {
