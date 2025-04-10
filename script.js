@@ -20,7 +20,7 @@ async function getWeather(place) {
         const temp = Math.round((weatherData.days[0].temp - 32) * 5/9);
         const tempMax = Math.round((weatherData.days[0].tempmax - 32) * 5/9);
         const tempMin = Math.round((weatherData.days[0].tempmin - 32) * 5/9);
-        const precip = weatherData.days[0].precip;
+        const precip = Math.round(weatherData.days[0].precip * 100);
 
         return {location: location, condition: condition, icon: icon, temp: temp, 
                 tempMax: tempMax, tempMin: tempMin, precip: precip};
@@ -45,7 +45,7 @@ function displayWeather(weather) {
     tempDisplay.textContent = `${weather.temp} °C`;
     tempMaxDisplay.textContent = `Max:  ${weather.tempMax} °C`;
     tempMinDisplay.textContent = `Min:  ${weather.tempMin} °C`;
-    precipDisplay.textContent = "Precip: " + weather.precip;
+    precipDisplay.textContent = `Precip: ${weather.precip}%`;
 }
 
 function displayIcon(icon) {

@@ -19,12 +19,13 @@ html, body {
 }
 
 .location {
-    font-size: 1.1em;
+    text-align: center;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
 .weather {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -32,7 +33,7 @@ html, body {
 
 .left {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 img {
